@@ -3216,8 +3216,9 @@ body._lock {
 }
 
 /* адаптив от 360 до 639 mobile */
+/* @media (min-width: 360px) and (max-width: 639px) { */
 
-@media (min-width: 360px) and (max-width: 639px) {
+@media (max-width: 639px) {
   html,
   body {
     overflow-x: hidden;
