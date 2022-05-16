@@ -1,0 +1,225 @@
+
+ :root {
+     --grey-2: #242424;
+     --grey-4:  #6B6B6B;
+     --bg-color: #F6F6F6;
+     --border: #D6D6D6;
+     --white: #FFFFFF;
+}
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    font-family: "Gilroy", sans-serif;
+}
+
+.modal__inner-description {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.modal__inner-info {
+    border-top: 1px solid var(--border);
+    width: 770px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.top {
+    width: 770px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+
+.pets-name {
+    justify-self: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--grey-2);
+}
+
+.btn__close {
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.pets_description {
+   grid-column: 2/6;
+   margin-left: 10px;
+   margin-bottom: 25px;
+}
+
+.pets_description p:not(:first-child) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 16px;
+}
+
+
+.age {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #6B6B6B;
+    padding-top: 16px;  
+}
+
+
+
+.modal__photo {
+    width: 770px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+.photo {
+   
+    width: 236px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
+
+
+.photo:nth-child(3n) {
+    margin-right: 0;
+}
+
+ .button-test {
+    width: 209px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    text-align: center;
+    margin-left: 64px;    
+}
+
+.our-wards__inner-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.our-wards__inner-btn a {
+    color: var(--grey-2);
+}
+
+.our-wards__inner-btn a:hover {
+    color: #000000;
+}
+
+.our-wards__inner-btn a:active {
+    color: var(--grey-2);
+}
+
+.button-test::before {
+    content: "";
+    width: 199px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    z-index: -1;   
+}
+
+
+.button-test:hover{
+    background: linear-gradient(180deg, #FFDC81 0%, #E6AA00 100%);
+    box-shadow: 7px 7px 16px #E0E0E0, -3px -4px 8px #FFFFFF, inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+
+.button-test:hover::before {
+    background: linear-gradient(180deg, #FFEEBC 0%, #FFE69F 36.46%, #FFCF48 68.23%, #FFC317 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
+
+.button-test:active::before {
+    background: linear-gradient(180deg, #FFE69F 0.01%, #E3B940 0.02%, #FFD24E 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;  
+}
+
+.inner-btn {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--grey-2);
+    display: block;     
+}
+
+.button-white a {
+    color: var(--grey-2);
+}
+
+.button-white {
+    width: 296px;
+    height: 42px;
+    background: var(--bg-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button-white::before {
+    content: "";
+    width: 286px;
+    height: 32px;
+    background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    z-index: -1;
+}
+
+.button-white:hover{
+    background: var(--bg-color);
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+
+.button-white:hover::before {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+}
+
+.button-white:active::before {
+    background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+    border-radius: 58px;  
+}

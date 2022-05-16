@@ -1,0 +1,599 @@
+
+ :root {
+     --grey-2: #242424;
+     --grey-4:  #6B6B6B;
+     --bg-color: #F6F6F6;
+     --border: #D6D6D6;
+     --white: #FFFFFF;
+}
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    font-family: "Gilroy", sans-serif;
+}
+
+
+.form {
+    margin: 0 auto;
+    max-width: 525px;
+
+}
+
+.form__inner {
+    width: 445px;
+    margin: 0 auto;
+}
+
+
+.form-top {
+    
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #B3B3B3;
+
+}
+
+.btn__close {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-top-content {
+   
+    padding-top: 16px;
+    border-top: 1px solid #EEBF3A;
+    display: flex;
+    align-items: center;
+}
+
+
+.pet-photo {
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 14px;
+}
+
+
+.form-top-info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #6B6B6B;
+}
+
+.form-top-info h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--grey-2);
+    margin-bottom: 8px;
+
+}
+
+.form__content {
+    max-width: 402px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--grey-4);
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    border: 1px solid #D6D6D6;
+    border-radius: 2px;
+    padding: 10px 16px;
+} 
+
+
+input:focus,
+textarea:focus {
+    border: none;
+    opacity: 0.8 ;
+    border: 2px solid #FFC41E;
+    border-radius: 2px;
+}
+
+::placeholder { 
+    color: var(--grey-4);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  
+}
+
+.phone-required {
+    display: block;
+    margin-top: 2px;
+    padding-left: 14px; 
+     font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #B3B3B3;
+    margin-bottom: 22px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    border-radius: 2px;
+    padding: 10px 16px;
+    margin-top: 22px;
+    resize:none;
+    margin-bottom: 24px;
+}
+
+
+.details {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #B3B3B3;
+    margin-top: 16px;
+
+}
+
+.form__content-bottom {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #474747;
+
+}
+button {
+    border: none;
+   cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--grey-2);
+    
+}
+
+.button-form {
+    width: 168px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    text-align: center;
+     
+}
+
+.button-form-auto {
+    width: 234px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    text-align: center;
+     
+}
+
+.our-wards__inner-btn {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.our-wards__inner-btn a {
+    color: var(--grey-2);
+}
+
+.our-wards__inner-btn a:hover {
+    color: #000000;
+}
+
+.our-wards__inner-btn a:active {
+    color: var(--grey-2);
+}
+
+.button-form::before {
+    content: "";
+    width: 158px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    z-index: -1;   
+   
+}
+
+.button-form-auto::before {
+    content: "";
+    width: 224px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    z-index: -1;   
+   
+}
+ 
+.feike__btn {
+    width: 170px;
+    height: 44px;
+    background: #FEE39E;
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    opacity: 0.8;
+    border-radius: 58px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 5;   
+    cursor: auto;
+    display: block;
+} 
+
+.feike__btn-auto {
+    width: 234px;
+    height: 44px;
+    background: #FEE39E;
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    opacity: 0.8;
+    border-radius: 58px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 5;   
+    cursor: auto;
+    display: block;
+} 
+
+.feike__btn:hover::after,
+.feike__btn-auto:hover::after {
+    content: "Кнопка недоступна. Заполните обязательные поля формы";
+    position: absolute;
+    width: 264px;
+    height: 48px;
+    background: #ffffff;
+    color: #2E3038;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    left: 0;
+    top: -26px;
+    z-index: 6;
+
+}
+
+
+
+.button-form:hover,
+.button-form-auto:hover {
+    background: linear-gradient(180deg, #FFDC81 0%, #E6AA00 100%);
+    box-shadow: 7px 7px 16px #E0E0E0, -3px -4px 8px #FFFFFF, inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+
+.button-form:hover::before,
+.button-form-auto:hover::before {
+    background: linear-gradient(180deg, #FFEEBC 0%, #FFE69F 36.46%, #FFCF48 68.23%, #FFC317 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
+
+.button-form:active::before,
+.button-form-auto:active::before {
+    background: linear-gradient(180deg, #FFE69F 0.01%, #E3B940 0.02%, #FFD24E 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;  
+}
+
+
+.button-white a {
+    color: var(--grey-2);
+}
+
+.button-white {
+    width: 143px;
+    height: 42px;
+    background: var(--bg-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button-white::before {
+    content: "";
+    width: 133px;
+    height: 32px;
+    background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    z-index: -1;
+}
+
+.button-white:hover{
+    background: var(--bg-color);
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+
+.button-white:hover::before {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+}
+
+.button-white:active::before {
+    background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+    border-radius: 58px;  
+}
+
+.container__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    user-select: none;
+    color: #6B6B6B;
+    margin-top: 16px;
+}
+  
+.container__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #F9B800;
+    box-shadow: 3px 3px 4px rgba(113, 113, 113, 0.05), inset 3px 3px 2px rgba(189, 188, 188, 0.24);
+    border-radius: 2px;
+}
+  
+ 
+.container__checkbox input:checked ~ .checkmark {
+    background-color: #F9B800;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container__checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container__checkbox .checkmark:after {
+    left: 4px;
+    bottom: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+
+.form_radio {
+     margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form_radio label {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+	line-height: 20px;
+    color: #6B6B6B;
+	user-select: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.form_radio label::before {
+    content: "";
+    position: absolute;
+    margin-left: -30px;
+    width: 18px;
+	height: 18px;
+    border-radius: 50%;
+    border: 1px solid #F9B800;
+}
+
+.form_radio input[type="radio"]:checked + label {
+    font-size: 14px;
+    font-weight: 500;
+	line-height: 20px;
+    color: #242424;    	
+}
+
+.form_radio input[type="radio"]:checked + label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(165.96deg, #FFFFFF 5%, #F2F2F2 90%);
+    border-radius: 50%;
+	position: absolute;
+    border: 7px solid #F9B800;
+    box-shadow: 1px 2px 2px rgba(236, 236, 236, 0.25);  
+}
+
+.modal__success {
+    width: 408px;
+    height: 260px;
+    margin: 0 auto;   
+}
+
+.modal__success-inner {
+    width: 328px;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-right {
+    display: flex;
+    justify-content: end;
+}
+
+.btn__close-ok {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-align: right;    
+}
+
+.modal__success-content {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #242424;
+        margin-top: 24px;
+        margin-bottom: 36px;
+}
+
+@media (min-width: 360px) and (max-width: 639px) {
+
+   
+    .form {
+        margin: 0 auto;
+        max-width: 360px;
+    }
+
+    .form__inner {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .form-top {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-bottom: 4px;
+        font-size: 20px; 
+    }
+
+    .our-wards__inner-btn {
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .feike__btn {
+        width: 170px;
+        height: 44px;
+        background: #FEE39E;
+        box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+        opacity: 0.8;
+        border-radius: 58px;
+        position: absolute;
+        top: 0px;
+        left:65px;
+        text-align: center;
+        z-index: 5;   
+        cursor: auto;
+        display: block;
+    } 
+
+    .button-white {
+        width: 143px;
+        height: 42px;
+        background: var(--bg-color);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+        border-radius: 58px;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .button-white::before {
+        content: "";
+        width: 133px;
+        height: 32px;
+        background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+        box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+        border-radius: 58px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        text-align: center;
+        z-index: -1;
+    }
+
+    
+    .feike__btn-auto {
+        width: 234px;
+        height: 44px;
+        background: #FEE39E;
+        box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+        opacity: 0.8;
+        border-radius: 58px;
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        text-align: center;
+        z-index: 5;   
+        cursor: auto;
+        display: block;
+    } 
+
+
+}

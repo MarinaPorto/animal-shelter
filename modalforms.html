@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <title>БООЗЖ "СПАСИ ЖИЗНЬ"</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="modalforms.css">
+</head>
+
+<body>
+    <section class="form">
+        <div class="form__inner">
+            <section class="form-top">
+                <h3 class="form-top-title">Забрать домой</h3>
+                <button class="btn__close" id="btn__close-modal"><img src="img/modal/close.svg" alt="close">
+                </button>
+            </section>
+            <div class="form-top-content">
+                <img class="pet-photo" src="img/modal/monik.jpg" alt="pet">
+                <div class="form-top-info">
+                    <h4>Моник</h4>
+                    <p>Мальчик, 7 месяцев</p>
+                </div>
+            </div>
+            <div class="form__content">
+                <p>Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+            </div>
+
+            <form action="">
+                <div>
+                    <input type="text" name="name" value="" placeholder="Фамилия и имя">
+                </div>
+                <div>
+                    <input data-rules="tel" type="tel" name="phone" value="" placeholder="Номер телефона"
+                        class="mask__phone" id="mask__phone" required>
+                </div>
+                <p class="phone-required">Обязательное поле для заполнения</p>
+
+                <textarea name="text" maxlength="500" placeholder="Замечания"></textarea>
+                <p class="form__content-bottom">Если у вас есть вопросы, можете позвонить нам:</p>
+                <p class="form__content-bottom">+375 (33) 6237879 Лена</p>
+                <p class="form__content-bottom"> +375 (29) 7877791 Ольга</p>
+                <p class="form__content-bottom"> +375 (29) 5837015 Рита</p>
+                <div class="our-wards__inner-btn">
+                    <button type="submit" class="button-form inner-btn-size" id="disabled" disabled>
+                        Отправить
+                    </button>
+                    <div class="feike__btn" id="feike__btn"></div>
+                    <button class="button-white inner-btn-size--white">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="form" id="temporarily">
+        <div class="form__inner">
+            <section class="form-top">
+                <h3 class="form-top-title">Забрать на передержку </h3>
+                <button class="btn__close" id="btn__close-modal"><img src="img/modal/close.svg" alt="close">
+                </button>
+            </section>
+            <div class="form-top-content">
+                <img class="pet-photo" src="img/modal/monik.jpg" alt="pet">
+                <div class="form-top-info">
+                    <h4>Моник</h4>
+                    <p>Мальчик, 7 месяцев</p>
+                </div>
+            </div>
+            <div class="form__content">
+                <p>Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+            </div>
+            <form action="">
+                <div>
+                    <input type="text" name="name" value="" placeholder="Фамилия и имя">
+                </div>
+                <div>
+                    <input data-rules="tel" type="tel" name="phone" value="" placeholder="Номер телефона"
+                        class="mask__phone" id="mask__phone-home" required>
+                </div>
+                <p class="phone-required">Обязательное поле для заполнения</p>
+                <textarea name="text" maxlength="500" placeholder="Замечания"></textarea>
+                <p class="form__content-bottom">Если у вас есть вопросы, можете позвонить нам:</p>
+                <p class="form__content-bottom">+375 (33) 6237879 Лена</p>
+                <p class="form__content-bottom"> +375 (29) 7877791 Ольга</p>
+                <p class="form__content-bottom"> +375 (29) 5837015 Рита</p>
+                <p class="details">
+                    Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.<br>
+                    Спасибо за помощь!
+                </p>
+                <div class="our-wards__inner-btn">
+                    <button type="submit" class="button-form inner-btn-size" id="disabled" disabled>
+                        Отправить
+                    </button>
+                    <div class="feike__btn" id="feike__btn-home"></div>
+                    <button class="button-white inner-btn-size--white">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="form" id="autohelp">
+        <div class="form__inner">
+            <section class="form-top">
+                <h3 class="form-top-title">Автопомощь</h3>
+                <button class="btn__close" id="btn__close-modal"><img src="img/modal/close.svg" alt="close">
+                </button>
+            </section>
+            <div class="form-top-content">
+                <div class="form-top-info">
+                    <h4>Заявка</h4>
+                </div>
+            </div>
+            <div class="form__content">
+                <p>Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке,
+                    мы позвоним вам.</p>
+            </div>
+            <form action="">
+                <div>
+                    <input type="text" name="name" value="" placeholder="Фамилия и имя">
+                </div>
+                <div>
+                    <input data-rules="tel" type="tel" name="phone" value="" placeholder="Номер телефона"
+                        class="mask__phone" id="mask__phone-auto" required>
+                </div>
+                <p class="phone-required">Обязательное поле для заполнения</p>
+                <p>Выберите вид автопомощи</p>
+                <label class="container__checkbox">Доставка еды, медикаментов и других небольших вещей
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container__checkbox">Доставка сена или соломы, строительных материлов для будок и других
+                    крупногабаритных вещей
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container__checkbox">Транспортировка небольших собак и котов
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container__checkbox">Транспортировка больших собак
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <textarea name="text" maxlength="500" placeholder="Замечания"></textarea>
+                <p class="form__content-bottom">Если у вас есть вопросы, можете позвонить нам:</p>
+                <p class="form__content-bottom">+375 (33) 6237879 Лена</p>
+                <p class="form__content-bottom"> +375 (29) 7877791 Ольга</p>
+                <p class="form__content-bottom"> +375 (29) 5837015 Рита</p>
+                <p class="details">
+                    Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.<br>
+                    Спасибо за помощь!
+                </p>
+                <div class="our-wards__inner-btn">
+                    <button type="submit" class="button-form-auto inner-btn-size" id="disabled" disabled>
+                        Отправить заявку
+                    </button>
+                    <div class="feike__btn-auto" id="feike__btn-auto"></div>
+                    <button class="button-white inner-btn-size--white">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="form" id="volonteerhelp">
+        <div class="form__inner">
+            <section class="form-top">
+                <h3 class="form-top-title">Волонтерство</h3>
+                <button class="btn__close" id="btn__close-modal"><img src="img/modal/close.svg" alt="close">
+                </button>
+            </section>
+            <div class="form-top-content">
+                <div class="form-top-info">
+                    <h4>Заявка</h4>
+                </div>
+            </div>
+            <div class="form__content">
+                <p>Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь, мы позвоним вам.
+                </p>
+            </div>
+            <form action="">
+                <div>
+                    <input type="text" name="name" value="" placeholder="Фамилия и имя">
+                </div>
+                <div>
+                    <input data-rules="tel" type="tel" name="phone" value="" placeholder="Номер телефона"
+                        class="mask__phone" id="mask__phone-volonter" required>
+                </div>
+                <p class="phone-required">Обязательное поле для заполнения</p>
+
+                <div class="form_radio">
+                    <input id="radio-1" type="radio" name="radio" checked>
+                    <label for="radio-1">Хочу помогать на постоянной основе (расписание можно подобрать так, как будет
+                        удобно для всех)</label>
+                </div>
+                <div class="form_radio">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="radio-2">Готов помогать иногда. Хочу выбрать удобное для меня время</label>
+                </div>
+                <textarea name="text" maxlength="500" placeholder="Замечания"></textarea>
+
+                <div class="our-wards__inner-btn">
+                    <button type="submit" class="button-form-auto inner-btn-size" id="disabled" disabled>
+                        Отправить заявку
+                    </button>
+                    <div class="feike__btn-auto" id="feike__btn-volonter"></div>
+                    <button class="button-white inner-btn-size--white">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="modal__success">
+        <div class="modal__success-inner">
+            <div class="btn-right">
+                <button class="btn__close-ok" id="btn__close-modal"><img src="img/modal/close.svg" alt="close">
+                </button>
+            </div>
+            <h4 class="modal__success-content">Успешно отправлено</h4>
+            <img src="img/modal/ok.svg" alt="ok">
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script src="maincopy.js"></script>
+
+</body>
+
+</html>
